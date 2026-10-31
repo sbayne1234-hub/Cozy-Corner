@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Cozy Corner</title>
+        <meta name="description" content="A cozy digital library for discovering books, tracking your reading, and finding a little magic between the pages.">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <div class="star-layer" aria-hidden="true"></div>
+        <header class="site-header">
+            <nav class="navbar" aria-label="Main navigation">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">☾</span>
+                    <span>The Cozy Corner</span>
+                </a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+                <div class="nav-links" id="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="books.html">Browse Books</a>
+                    <a href="bookshelf.html">My Bookshelf</a>
+                    <a href="journal.html">Reading Journal</a>
+                    <a href="challenges.html">Challenges</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="hero section-container">
+                <div class="hero-content">
+                    <p class="eyebrow">✦ YOUR LITTLE ESCAPE ✦</p>
+                    <h1> A little magic<br> between the <span>pages.</span></h1>
+                    <p class="hero-description">Somewhere between the stars and the stories, there's a little corner just for you. Find your next favorite book, collect your adventures, and make yourself at home.</p>
+                    <div class="hero-buttons">
+                        <a href="books.html" class="button buttin-primary">Explore the Library <span>↗</span></a>
+                        <a href="bookshelf.html" class="button button-secondary">My Bookshelf ♡</a>
+                    </div>
+                    <div class="hero-note">
+                        <span>✧</span> Every book opens a new universe.
+                    </div>
+                </div>
+                <div class="hero-art" aria-label="Featured book illustration">
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+                    <span class="floating-star star-one">✦</span>
+                    <span class="floating-star star-two">✧</span>
+                    <span class="floating-star star-three">✦</span>
+                    <div class="moon">☾</div>
+                    <div class="hero-book">
+                        <div class="book-decoration">✧</div>
+                        <p class="book-small-text">A STORY FOR THE SOUL</p>
+                        <h2>Somewhere<br>Beyond<Br>the Stars</h2>
+                        <div class="book-divider"></div>
+                        <p class="book-author">A little imaginary tale</p>
+                        <span class="book-sparkle">✦</span>
+                    </div>
+                    <p class="art-caption">your next adventure awaits...</p>
+                </div>
+            </section>
+            <section class="stats-section section-container">
+                <div class="stat-card">
+                    <span class="stat-icon">♡</span>
+                    <div>
+                        <p class="stat-number" id="saved-count">0</p>
+                        <p class="stat-label">Saved Favorites</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">☾</span>
+                    <div>
+                        <p class="stat-number" id="reading-count">0</p>
+                        <p class="stat-label">Currently Reading</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">✧</span>
+                    <div>
+                        <p class="stat-number" id="finished-count">0</p>
+                        <p class="stat-label">Books Finished</p>
+                    </div>
+                </div>
+            </section>
+            <section class="featured-section section-container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">✦ HANDPICKED FOR YOU ✦</p>
+                        <h2>A little shelf of <span>wonder.</span></h2>
+                        <p class="section-description">
+                            A few stories to get your next reading adventure started.
+                        </p>
+                    </div>
+                    <a href="books.html" class="text-link">
+                        Discover more <span>→</span>
+                    </a>
+                </div>
+                <div class="book-grid" id="featured-books">
+                    <p class="loading-message">Opening the library...</p>
+                </div>
+            </section>
+            <section class="quote-section section-container">
+                <div class="quote-card">
+                    <span class="quote-decoration quote-left">"</span>
+                    <p class="eyebrow">✦ A LITTLE FOOD FOR THOUGHT ✦</p>
+                    <blockquote id="reading-quote">
+                        There is no friend as loyal as a book.
+                    </blockquote>
+                    <p class="quote-author" id="quote-author">
+                        - Ernest Hemingway
+                    </p>
+                    <button class="quote-button" id="new-quote">
+                        A little more insiration ↻
+                    </button>
+                    <span class="quote-decoration auote-right">✧</span>
+                </div>
+            </section>
+            <section class="challenge-section section-container">
+                <div class="challenge-card">
+                    <div class="challenge-content">
+                        <p class="eyebrow">✦ YOUR NEXT LITTLE ADVENTURE ✦</p>
+                        <h2>Make this a year<br>full of <span>stories.</span></h2>
+                        <p>Set a reading goal, discover new genres, and celebrate every little milestone along the way.</p>
+                        <a href="challenges.html" class="button button-primary">Find Your Next Challenge ↗</a>
+                    </div>
+                    <div class="challenge-art" aria-hidden="true">
+                        <span class="challenge-moon">☾</span>
+                        <span class="challenge-star">✦</span>
+                        <span class="challenge-book">📚</span>
+                        <span class="challenge-sparkle">✧</span>                    
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-fotter">
+            <a href="index.html" class="footer-logo">☾ The Cozy Corner</a>
+            <p>A little escape, one page at a time. ✧</p>
+            <div class="footer-links">
+                <a href="books.html">Library</a>
+                <a href="bookshelf.html">Bookshelf</a>
+                <a href="journal.html">Journal</a>
+                <a href="challenges.html">Challenges</a>
+            </div>
+        </footer>
+    </body>
+</html>
