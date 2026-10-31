@@ -1,0 +1,64 @@
+:root {
+    --midnight: #080d1e;
+    --navy: #10172e;
+    --purple: #25204b;
+    --lavendar: #a99aff;
+    --moonlight: #e3ddff;
+    --soft-white: #f4f1ff;
+    --muted: #b5b2d1;
+    --border: rgba(201, 190, 255, 0.16);
+    --card: rgba(22, 27, 57, 0.78);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: radial-gradient(ellipse at 15% 15%, #201b46 0%, transparent 35%), radial-gradient(ellipse at 85% 45%, #151d3b 0%, transparent 38%), var(--midnight);
+    color: var(--soft-white);
+    font-family: 'Trebuchet MS', sans-serif;
+    line-height: 1.7;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button {
+    font: inherit;
+}
+button, a {
+    -webkit-tap-highlight-color: transparent;
+}
+button:focus-visible, a:focus-visible {
+    outline: 2px solid var(--moonlight);
+    outline-offset: 4px;
+}
+::selection {
+    background: var(--lavendar);
+    color: var(--midnight);
+}
+.star-layer {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.7;
+    background-image: radial-gradient(2px 2px at 10% 20%, white 50%, transparent 100%), radial-gradient(1px 1px at 35% 65%, #d8ceff 50%, transparent 100%), radial-gradient(2px 2px at 75% 25%, white 50%, transparent 100%), radial-gradient(1px 1px at 90% 80%, #b9aaff 50%, transparent 100%), radial-gradient(1px 1px at 55% 10%, white 50%, transparent 100%), radial-gradient(2px 2px at 20% 85%, #c9bdff 50%, transparent 100%);
+    background-size: 360px 320px;
+    animation: starDrift 45s linear infinite alternate;
+}
+@keyframes starDrift {
+    from {background-potion:0 0;} to {background-position: 80px 100px;}
+}
+@keyframes twinkle {
+    0%, 100% {opacity:0.45; transform: scale(0.9);} 50% {opacity: 1; transform: scale(1.15);}
+}
+@keyframes float {
+    0%, 100% {transform: translateY(0);} 50% {transform: translateY(-12px);}
+}
