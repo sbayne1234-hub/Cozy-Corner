@@ -151,3 +151,125 @@ h1 span, h2 span {
 .button:hover {
     transform: translateY(-3px);
 }
+.button-primary {
+    background: linear-gradient(135deg, #b4a5ff, #8874e7);
+    color: #100d29;
+    box-shadow: 0 8px 25px rgba(137, 116, 231, 0.2);
+}
+.button-primary:hover {
+    box-shadow: 0 10px 30px rgba(169, 154, 255, 0.35);
+}
+.button-secondary {
+    border-color: var(--border);
+    background: rgba(255, 255, 255, 0.035);
+    color: var(--moonlight);
+}
+.button-secondary:hover {
+    background: rgba(169, 154, 255, 0.1);
+}
+.hero {
+    min-height: 570px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 45px;
+    padding-block: 75px 65px;
+}
+.hero-content {
+    max-width: 570px;
+}
+.hero h1 {
+    margin-top: 22px;
+    font-size: clamp(2.8rem, 5.2vw, 4.6rem);
+    letter-spacing: -1.5px;
+}
+.hero-description {
+    max-width: 490px;
+    margin-top: 22px;
+    color: var(--muted);
+    font-size: 0.98rem;
+}
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+.hero-note {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 25px;
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+.hero-note span {
+    color: var(--lavendar);
+}
+.hero-art {
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    isolation: isolate;
+}
+.orbit {
+    position: absolute;
+    width: 310px;
+    height: 310px;
+    border:1px solid rgba(169, 154, 255, 0.18);
+    border-radius: 50%;
+    z-index: -1;
+}
+.orbit-two {
+    width: 380px;
+    height: 380px;
+    border-color: rgba(169, 154, 255, 0.1);
+}
+.moon {
+    position: absolute;
+    top: 8%;
+    right: 12%;
+    color: #e7dfff;
+    font-size: 4.5rem;
+    filter: drop-shadow(0 0 22px rgba(202, 185, 255, 0.6));
+    animation: float 5s ease-in-out infinite;
+}
+.floating-star {
+    position: absolute;
+    color: var(--moonlight);
+    text-shadow: 0 0 16px var(--lavendar);
+    animation: twinkle 3s ease-in-out infinite;
+}
+.star-one {
+    top: 20%;
+    left: 12%;
+    font-size: 1.8rem;
+}
+.star-two {
+    top: 65%;
+    right: 8%;
+    font-size: 2rem;
+    animation-delay: 1s;
+}
+.star-three {
+    bottom: 15%;
+    left: 17%;
+    font-size: 1.3rem;
+    animation-delay: 1.5s;
+}
+.hero-book {
+    position: relative;
+    width: 235ps;
+    min-height: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 20px;
+    overflow: hidden;
+    border: 1px solid rgba(222, 211, 255, 0.55);
+    border-radius: 5px 16px 16px 5px;
+    background:
+}
