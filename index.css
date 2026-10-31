@@ -62,3 +62,92 @@ button:focus-visible, a:focus-visible {
 @keyframes float {
     0%, 100% {transform: translateY(0);} 50% {transform: translateY(-12px);}
 }
+.site-header {
+    position: relative;
+    z-index: 10;
+    border-bottom: 1px solid var(--border);
+    background: rgba(8, 13, 30, 0.78);
+    backdrop-filter: blur(14px);
+}
+.navbar {
+    width: min(1160px, 90%);
+    min-height: 82px;
+    margin: auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.logo-icon {
+    color: var(--lavendar);
+    font-size: 2rem;
+}
+.nav-links {
+    display: felx;
+    align-items: center;
+    gap: 25px;
+}
+.nav-links a {
+    color: var(--muted);
+    font-size: 0.85rem;
+    transition: color 0.25s ease;
+}
+.navlinks a:hover, .nav-links a.active {
+    color: var(--moonlight);
+}
+.nav-links a.active {
+    text-shadow: 0 0 16px rgba(169, 154, 255, 0.4);
+}
+.menu-toggle {
+    display: none;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--card);
+    color: var(--soft-white);
+    padding: 7px 12px;
+    cursor: pointer;
+}
+.section-container {
+    width: min(1100px, 88%);
+    margin-inline: auto;
+}
+.eyebrow {
+    color: var(--lavendar);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+h1, h2, h3 {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+h1 span, h2 span {
+    color: var(--lavendar);
+    font-style: italic;
+}
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 48px;
+    padding: 12px 20px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+.button:hover {
+    transform: translateY(-3px);
+}
