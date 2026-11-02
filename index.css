@@ -271,5 +271,52 @@ h1 span, h2 span {
     overflow: hidden;
     border: 1px solid rgba(222, 211, 255, 0.55);
     border-radius: 5px 16px 16px 5px;
-    background:
+    background: radial-gradient(ellipsse at 50% 30%, #554784 0%, transparent 65%), linear-gradient(140deg, #332857, #151b3d 75%);
+    box-shadow: -8px 8px 0 #0e1129, -12px 14px 35px rgba(0, 0, 0, 0.35), 0 0 45px rgba(137, 116, 231, 0.18);
+    text-align: center;
+    transform: rotate(-4deg);
+    transition: transfrom 0.4s ease;
+}
+.hero-book:hover {
+    transform: rotate(0deg) translateY(-5px);
+}
+.book-decoration {
+    color: #d9cbff;
+    font-size: 2.6rem;
+}
+.book-small-text {
+    margin-top: 15px;
+    color: #c9bfff;
+    font-size: 0.55rem;
+    letter-spacing: 2px;
+}
+.hero-book h2 {
+    margin-top: 14px;
+    font-size: 1.8rem;
+    line-height: 1.25;
+}
+.book-divider {
+    width: 55px;
+    height: 1px;
+    margin-top: 18px;
+    background: var(--lavendar);
+}
+.book-author {
+    margin-top: 12px;
+    color: #c9c0ed;
+    font-size: 0.7rem;
+}
+.book-sparkle {
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    color: var(--moonlight);
+}
+.art-caption {
+    position: absolute;
+    bottom: 0;
+    color: var(--muted);
+    font-family: Georgia, serif;
+    font-size: 0.95rem;
+    font-style: italic;
 }
